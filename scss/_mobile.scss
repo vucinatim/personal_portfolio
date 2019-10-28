@@ -1,0 +1,204 @@
+// Widescreens (> 1171px)
+@include mediaXl {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .job-title {
+    font-size: 18px;
+  }
+}
+
+// Desktop & laptop (769px - 1170px)
+@include mediaLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .job-title {
+    font-size: 1.7vw;
+  }
+
+  .music-wrapper {
+    padding: 0 1.5rem 2rem 1.5rem;
+
+    .music-box {
+      padding: 1rem;
+    }
+  }
+}
+
+// Tablets & small laptops (< 768px)
+@include mediaMd {
+  .page-title {
+    align-items: center;
+    text-align: center;
+  }
+
+  .front {
+    align-items: center;
+    text-align: center;
+
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .job-info-container {
+    grid-template-areas:
+      "job1"
+      "job2"
+      "job3";
+
+    grid-template-columns: 1fr;
+  }
+
+  .bio-container {
+    grid-template-areas:
+      "bioimage"
+      "bio";
+
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+
+  .bio-image {
+    align-items: center;
+    text-align: center;
+    max-width: 30%;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .job-title {
+    font-size: 18px;
+  }
+
+  // Menu Circle Nav
+  .menu {
+    .circle {
+      border: solid 220px $nav-circle-color;
+    }
+    .nav-links {
+      @include on-circle($item-count: 3, $circle-size: 260px, $item-size: 6em);
+    }
+  }
+
+  .music-wrapper {
+    grid-template-areas:
+      "yt-music"
+      "sc-music";
+
+    grid-template-columns: 1fr;
+  }
+  .projects-wrapper {
+    .project-container {
+      .project-box {
+        grid-template-areas:
+          "project-image"
+          "description";
+        grid-template-columns: 1fr;
+        font-size: 0.8rem;
+
+        .project-image {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+// Smartphones (< 500px)
+@include mediaSm {
+  main#home h1 {
+    margin-top: 10vh;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .job-title {
+    font-size: 3vw;
+  }
+
+  .bio-container {
+    padding: 3rem 2rem 3rem 2rem;
+  }
+
+  .job-info-container {
+    padding: 3rem 2rem 3rem 2rem;
+  }
+
+  // Menu Circle Nav
+  .menu {
+    .circle {
+      border: solid 44vw $nav-circle-color;
+    }
+    .nav-links {
+      @include on-circle($item-count: 3, $circle-size: 50vw, $item-size: 18vw);
+    }
+
+    .contact-me {
+      article {
+        padding: 1.5rem;
+        .contact-title {
+          font-size: 1rem;
+        }
+        .icons {
+          margin-top: 0.5rem;
+        }
+      }
+      form {
+        margin-bottom: 1rem;
+        .fields {
+          align-items: center;
+          margin-bottom: 1rem;
+          .field {
+            padding: 1rem 0 0 1.5rem;
+          }
+        }
+        label {
+          font-size: 0.6rem;
+          line-height: 1;
+          margin: 0 0 0.5rem 0;
+        }
+        textarea {
+          padding: 0.5rem 1rem;
+          height: 12vh;
+          font-size: 1rem;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+          padding: 0 1rem 0 1rem;
+          font-size: 2vw;
+        }
+      }
+    }
+  }
+
+  .library-container {
+    padding: 1.6vw 1rem 0rem 1rem;
+  }
+
+  .music-wrapper {
+    padding: 0 1rem 2rem 1rem;
+
+    .music-box {
+      padding: 1rem;
+    }
+  }
+
+  .projects-wrapper {
+    .project-container {
+      padding: 1rem;
+      .project-box {
+        grid-gap: 1rem;
+        padding: 1rem;
+      }
+    }
+  }
+}

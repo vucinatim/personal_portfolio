@@ -1,0 +1,141 @@
+// Front top page of Home
+.front {
+  position: relative;
+  padding: 4rem;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(black, 0), rgba(black, 0), black);
+  color: $primary-color;
+
+  h1 {
+    margin-top: 20vh;
+  }
+
+  .read-more {
+    width: 100%;
+    padding-bottom: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    cursor: pointer;
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    #more-arrow {
+      padding-top: 0.5rem;
+      height: 25px;
+      width: 25px;
+    }
+  }
+}
+
+// About Info
+.bio-container {
+  z-index: 5;
+  background-color: $bg-color;
+  display: grid;
+  padding: 4rem;
+  grid-gap: 4rem;
+  grid-template-areas: "bioimage bio bio";
+  grid-template-columns: repeat(3, 1fr);
+  color: $primary-color;
+}
+
+.bio-image {
+  grid-area: bioimage;
+  margin: auto;
+  max-width: 200px;
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.bio {
+  grid-area: bio;
+  font-size: 1.2rem;
+}
+
+.job-info-container {
+  background-color: $bg-color;
+  display: grid;
+  padding: 4rem;
+  grid-gap: 30px;
+  grid-template-areas: "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.job-1 {
+  grid-area: job1;
+
+  &:hover {
+    @include easeOut;
+    h3 {
+      color: $code-secondary-color;
+    }
+    .job-box {
+      border: 3px dotted $code-secondary-color;
+    }
+  }
+}
+
+.job-2 {
+  grid-area: job2;
+
+  &:hover {
+    @include easeOut;
+    h3 {
+      color: $graphics-secondary-color;
+    }
+    .job-box {
+      border: 3px dotted $graphics-secondary-color;
+    }
+  }
+}
+
+.job-3 {
+  grid-area: job3;
+
+  &:hover {
+    @include easeOut;
+    h3 {
+      color: $music-secondary-color;
+    }
+    .job-box {
+      border: 3px dotted $music-secondary-color;
+    }
+  }
+}
+
+.job {
+  // background: rgba(lighten(rgb(255, 255, 255), 2), 0.03);
+  // padding: 1rem;
+  // border-bottom: $secondary-color 5px solid;
+  position: relative;
+
+  .job-title {
+    margin: 0;
+    font-weight: 10;
+    letter-spacing: 0.2rem;
+    padding: 0rem 1rem 0rem 1rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+    background-color: $bg-color;
+    text-align: center;
+    @include easeOut;
+    color: $dark-highlight-color;
+  }
+
+  .job-box {
+    padding: 1rem;
+    border: 3px dotted $dark-highlight-color;
+    cursor: pointer;
+    @include easeOut;
+  }
+}

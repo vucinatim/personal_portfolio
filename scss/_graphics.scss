@@ -1,0 +1,102 @@
+// Graphics Page Library
+.library-container {
+  position: relative;
+  margin-bottom: 3rem;
+  padding: 1.6vw 3rem 0rem 3rem;
+  align-items: center;
+  text-align: center;
+  color: #28292c;
+  @include easeOut;
+  @media (min-width: 1250px) {
+    padding: 20px 3rem 0rem 3rem;
+  }
+
+  &:hover {
+    @include easeOut;
+    color: $graphics-secondary-color;
+  }
+
+  .library-title {
+    margin: 0;
+    font-weight: 10;
+    letter-spacing: 0.6rem;
+    padding: 0rem 1rem 0rem 1rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+    background-color: $bg-color;
+    font-size: 2.4vw;
+    @media (min-width: 1250px) {
+      font-size: 30px;
+    }
+  }
+}
+
+// Image Library
+.library-window {
+  margin: auto;
+  padding: 3vw 1rem 0rem 1rem;
+  max-width: 60rem;
+  border: 3px dotted;
+  text-align: center;
+  @media (min-width: 1250px) {
+    padding: 40.38px 1rem 0rem 1rem;
+  }
+
+  .expand-btn {
+    width: 100%;
+    height: 5vw;
+    max-height: 45px;
+    padding-left: 1rem;
+    margin-top: 0.2rem;
+    background: url(../img/gallery-ui/expand.png);
+    background-position: center center;
+    background-size: 4%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    @include easeOut;
+
+    &:hover {
+      @include easeOut;
+      margin: 0.6rem 0rem 0rem 0rem;
+    }
+  }
+
+  .hidden-img-library {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(3, 1fr);
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    overflow-y: hidden;
+
+    .item {
+      padding: 2rem 1rem 0rem 1rem;
+    }
+  }
+
+  .img-library {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(3, 1fr);
+
+    .item {
+      padding: 1rem 1rem 0rem 1rem;
+    }
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}

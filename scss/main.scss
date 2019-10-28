@@ -1,0 +1,150 @@
+@import "config";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.read-more {
+  visibility: visible;
+}
+
+html:not([data-scroll="0"]) {
+  .read-more {
+    visibility: hidden;
+  }
+}
+
+body {
+  background: black;
+  height: 100%;
+  margin: 0;
+  font-family: "Gravity Regular", "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+  line-height: 1.5;
+
+  .bg-image {
+    @include bg-image;
+
+    &.blur {
+      @include better-blur(20);
+    }
+  }
+
+  p {
+    //text-align: justify;
+  }
+}
+
+// Headings
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 10;
+
+  &.lg-heading {
+    font-size: 3rem;
+    letter-spacing: 1rem;
+  }
+
+  &.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($primary-color, 2), $overlay-opacity);
+  }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+main {
+  min-height: calc(100vh - 60px);
+  overflow: hidden;
+  opacity: 1;
+
+  &.blur {
+    @include better-blur(20);
+  }
+
+  .page-title {
+    padding: 4rem 4rem 0rem 4rem;
+    margin: 0;
+
+    &.centered {
+      text-align: center;
+
+      #title-img {
+        padding-bottom: 2rem;
+        width: 60vw;
+      }
+    }
+  }
+
+  .icons {
+    margin-top: 1rem;
+
+    a {
+      padding: 0.4rem;
+
+      &:hover {
+        color: $secondary-color;
+        @include easeOut;
+      }
+    }
+  }
+}
+
+// Button Styles
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+
+  &:hover {
+    background: $secondary-color;
+    color: black;
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background: rgba(lighten($primary-color, 2), 0.2);
+  color: #fff;
+}
+
+.btn-light {
+  @extend .btn;
+  background: rgba(lighten($primary-color, 2), 0.2);
+  color: #333;
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem 0 0 0;
+  background: black;
+  color: $primary-color;
+  height: 60px;
+}
+
+@import "home";
+@import "graphics";
+@import "code";
+@import "music";
+@import "menu";
+@import "lightbox.min";
+@import "mobile";

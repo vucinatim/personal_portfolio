@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Graphic Design</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu-btn-outline">
+        <div class="menu-btn">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <div class="menu-header">
+          <a class="home-btn" href="./index.html">
+            <i class="fas fa-home fa-2x home-btn-image"></i>
+          </a>
+          <button class="contact-btn" id="toggleContact">
+            <i class="fas fa-envelope fa-2x contact-btn-image"></i>
+          </button>
+        </div>
+        <div class="menu-nav">
+          <div class="circle"></div>
+          <p class="btn-text">text</p>
+          <ul class="nav-links">
+            <li class="nav-item" id="graphics">
+              <a href="graphics.html" class="nav-link">
+                <img src="img/art-icon-rect.png" id="graphics" alt="" />
+                <div class="triangle-line" id="g"></div>
+              </a>
+            </li>
+            <li class="nav-item" id="music">
+              <a href="music.html" class="nav-link">
+                <img src="img/music-icon-rect.png" id="music" alt="" />
+                <div class="triangle-line" id="m"></div>
+              </a>
+            </li>
+            <li class="nav-item" id="code">
+              <a href="code.html" class="nav-link">
+                <img src="img/code-icon-rect.png" id="code" alt="" />
+                <div class="triangle-line" id="c"></div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div class="contact-me">
+          <article id="contact">
+            <h2 class="contact-title">Contact</h2>
+            <form
+              action="https://app.99inbound.com/api/e/rt6bF_PH"
+              method="POST"
+              target="_blank"
+            >
+              <div class="fields">
+                <div class="field half">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name" />
+                </div>
+                <div class="field half">
+                  <label for="email">Email</label>
+                  <input type="text" name="email" id="email" />
+                </div>
+                <div class="field">
+                  <label for="subject">Subject</label>
+                  <input type="text" name="subject" id="subject" />
+                </div>
+                <div class="field">
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message" rows="4"></textarea>
+                </div>
+              </div>
+              <ul class="actions">
+                <li>
+                  <input type="submit" value="Send Message" class="primary" />
+                </li>
+                <li><input type="reset" value="Reset" /></li>
+              </ul>
+              <!-- Stop Spam With honeypot -->
+              <div style="position: absolute; left: -5000px;">
+                <input
+                  type="checkbox"
+                  name="sugarfilled_turquoise_checked_suit"
+                  value="1"
+                  tabindex="-1"
+                  autocomplete="no"
+                />
+              </div>
+            </form>
+            <div class="icons">
+              <a
+                href="https://www.youtube.com/channel/UCnzGWPZ7_nUMgkmhU3sn6QA"
+              >
+                <i class="fab fa-youtube fa-2x"></i>
+              </a>
+              <a href="https://soundcloud.com/tim-vook">
+                <i class="fab fa-soundcloud fa-2x"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/tim-vu%C4%8Dina-945153196/">
+                <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+              <a href="https://github.com/vucinatim?tab=repositories">
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </nav>
+    </header>
+
+    <main id="graphics" class="blurable">
+      <div class="page-title centered">
+        <img id="title-img" src="img/graphic-design-title-orange.png" alt="" />
+      </div>
+      <div class="library-container">
+        <h5 class="library-title">COVER ART</h5>
+        <div class="library-window">
+          <div class="img-library">
+            <div class="item">
+              <a
+                href="img/graphics/cover-art/spacewalk.png"
+                data-lightbox="cover-art"
+                data-title="track ID: Tim Vook - Spacewalk"
+              >
+                <img
+                  src="img/graphics/cover-art/spacewalk.png"
+                  alt="cover-art"
+                />
+              </a>
+            </div>
+            <div class="item">
+              <a
+                href="img/graphics/cover-art/sherif.png"
+                data-lightbox="cover-art"
+                data-title="track ID: Tim Vook - Groovy Sherif"
+              >
+                <img src="img/graphics/cover-art/sherif.png" alt="cover-art" />
+              </a>
+            </div>
+            <div class="item">
+              <a
+                href="img/graphics/cover-art/sunset.png"
+                data-lightbox="cover-art"
+                data-title="track ID: Tim Vook - Waiting For The Sun"
+              >
+                <img src="img/graphics/cover-art/sunset.png" alt="cover-art" />
+              </a>
+            </div>
+          </div>
+          <div class="hidden-img-library">
+            <div class="item hidden">
+              <a
+                href="img/graphics/cover-art/purple.jpg"
+                data-lightbox="cover-art"
+                data-title="track ID: ID (Unreleased)"
+              >
+                <img src="img/graphics/cover-art/purple.jpg" alt="cover-art" />
+              </a>
+            </div>
+            <div class="item hidden">
+              <a
+                href="img/graphics/cover-art/it-isnt.png"
+                data-lightbox="cover-art"
+                data-title="track ID: ID (Unreleased)"
+              >
+                <img src="img/graphics/cover-art/it-isnt.png" alt="cover-art" />
+              </a>
+            </div>
+            <div class="item hidden">
+              <a
+                href="img/graphics/cover-art/polarity.jpg"
+                data-lightbox="cover-art"
+                data-title="track ID: Tim Vook - Polarity"
+              >
+                <img
+                  src="img/graphics/cover-art/polarity.jpg"
+                  alt="cover-art"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="expand-btn"></div>
+        </div>
+      </div>
+
+      <div class="library-container">
+        <h5 class="library-title">CLOTHING</h5>
+        <div class="library-window">
+          <div class="img-library">
+            <div class="item">
+              <a
+                href="img/graphics/clothing/azt.jpg"
+                data-lightbox="clothing"
+                data-title="AZT Hoodie Design"
+              >
+                <img
+                  src="img/graphics/clothing/thumbnails/azt-thumb.jpg"
+                  alt="clothing"
+                />
+              </a>
+            </div>
+            <div class="item">
+              <a
+                href="img/graphics/clothing/cool-cat.png"
+                data-lightbox="clothing"
+                data-title="Cool Cat Hoodie Design"
+              >
+                <img
+                  src="img/graphics/clothing/thumbnails/cool-cat-thumb.png"
+                  alt="clothing"
+                />
+              </a>
+            </div>
+            <div class="item">
+              <a
+                href="img/graphics/clothing/tv-slanted.jpg"
+                data-lightbox="clothing"
+                data-title="Tim Vook Logo Hoodie Design"
+              >
+                <img
+                  src="img/graphics/clothing/thumbnails/tv-slanted-thumb.jpg"
+                  alt="clothing"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="hidden-img-library">
+            <div class="item hidden">
+              <a
+                href="img/graphics/clothing/astronout.jpg"
+                data-lightbox="clothing"
+                data-title="Astronout T-shirt Design"
+              >
+                <img
+                  src="img/graphics/clothing/thumbnails/astronout-thumb.jpg"
+                  alt="clothing"
+                />
+              </a>
+            </div>
+            <div class="item hidden">
+              <a
+                href="img/graphics/clothing/fib.jpg"
+                data-lightbox="clothing"
+                data-title="Fibonacci Code Hoodie Design"
+              >
+                <img
+                  src="img/graphics/clothing/thumbnails/fib-thumb.jpg"
+                  alt="clothing"
+                />
+              </a>
+            </div>
+            <div class="item hidden">
+              <a
+                href="img/graphics/clothing/radnicki.jpg"
+                data-lightbox="clothing"
+                data-title="Radnicki T-shirt Design"
+              >
+                <img
+                  src="img/graphics/clothing/thumbnails/radnicki-thumb.jpg"
+                  alt="clothing"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="expand-btn"></div>
+        </div>
+      </div>
+
+      <div class="library-container">
+        <h5 class="library-title">BANNERS</h5>
+        <div class="library-window">
+          <div class="img-library">
+            <div class="item">
+              <a
+                href="img/graphics/banners/privatka-1.png"
+                data-lightbox="banners"
+                data-title="Techno and House Party Ticket"
+              >
+                <img
+                  src="img/graphics/banners/thumbnails/privatka-1-thumb.png"
+                  alt="banners"
+                />
+              </a>
+            </div>
+            <div class="item">
+              <a
+                href="img/graphics/banners/privatka-2.png"
+                data-lightbox="banners"
+                data-title="Techno and Trance Event Promo Banner"
+              >
+                <img
+                  src="img/graphics/banners/thumbnails/privatka-2-thumb.png"
+                  alt="banners"
+                />
+              </a>
+            </div>
+            <div class="item">
+              <a
+                href="img/graphics/banners/privatka-3.png"
+                data-lightbox="banners"
+                data-title="Techno Event Promo Banner"
+              >
+                <img
+                  src="img/graphics/banners/thumbnails/privatka-3-thumb.png"
+                  alt="banners"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="hidden-img-library">
+            <div class="item hidden">
+              <a
+                href="img/graphics/banners/unforged.png"
+                data-lightbox="banners"
+                data-title="Youtube Channel Banner"
+              >
+                <img
+                  src="img/graphics/banners/thumbnails/unforged-thumb.png"
+                  alt="banners"
+                />
+              </a>
+            </div>
+            <div class="item hidden">
+              <a
+                href="img/graphics/banners/blackandwhite.png"
+                data-lightbox="banners"
+                data-title="Mninimalistic B&W Promo Banner Design"
+              >
+                <img
+                  src="img/graphics/banners/thumbnails/blackandwhite-thumb.png"
+                  alt="banners"
+                />
+              </a>
+            </div>
+            <div class="item hidden">
+              <a
+                href="img/graphics/banners/planet-logo.png"
+                data-lightbox="banners"
+                data-title="Big Screen BG Promo Banner With Tim Vook Logo"
+              >
+                <img
+                  src="img/graphics/banners/thumbnails/planet-logo-thumb.png"
+                  alt="banners"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="expand-btn"></div>
+        </div>
+      </div>
+      <div class="library-container">
+        <h5 class="library-title">PROMOTIONAL</h5>
+        <div class="library-window">
+          <div class="img-library">
+            <div class="item">
+              <a
+                href="img/graphics/promotional/girls-epilator.png"
+                data-lightbox="promotional"
+                data-title="Woman's product advert design (light)"
+              >
+                <img
+                  src="img/graphics/promotional/thumbnails/girls-epilator-thumb.png"
+                  alt="promotional"
+                />
+              </a>
+            </div>
+            <div class="item">
+              <a
+                href="img/graphics/promotional/audio-technica.png"
+                data-lightbox="promotional"
+                data-title="Audio technica headphones design"
+              >
+                <img
+                  src="img/graphics/promotional/thumbnails/audio-technica-thumb.png"
+                  alt="promotional"
+                />
+              </a>
+            </div>
+            <div class="item">
+              <a
+                href="img/graphics/promotional/women-epilator.png"
+                data-lightbox="promotional"
+                data-title="Woman's product advert design (dark)"
+              >
+                <img
+                  src="img/graphics/promotional/thumbnails/women-epilator-thumb.png"
+                  alt="promotional"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="hidden-img-library">
+            <div class="item hidden">
+              <a
+                href="img/graphics/promotional/keyboard.png"
+                data-lightbox="promotional"
+                data-title="Mechanical keyboard advert design"
+              >
+                <img
+                  src="img/graphics/promotional/thumbnails/keyboard-thumb.png"
+                  alt="promotional"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="expand-btn"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="main-footer">
+      Copyright &copy; 2019
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/fd0f852bd6.js"></script>
+    <script
+      type="text/javascript"
+      src="js/lightbox-plus-jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="js/graphics.js"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+// Music Page
+.music-wrapper {
+  background: rgba(#000, 1);
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "yt-music sc-music";
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 3rem 3rem 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.yt-music {
+  grid-area: yt-music;
+
+  &:hover {
+    @include easeOut;
+    h3 {
+      color: $music-secondary-color;
+    }
+    .music-box {
+      border: 3px dotted $music-secondary-color;
+    }
+  }
+}
+
+.sc-music {
+  grid-area: sc-music;
+
+  &:hover {
+    @include easeOut;
+    h3 {
+      color: $music-secondary-color;
+    }
+    .music-box {
+      border: 3px dotted $music-secondary-color;
+    }
+  }
+}
+
+.music-container {
+  justify-content: center;
+  color: white;
+  position: relative;
+
+  .music-container-title {
+    margin: 0;
+    font-weight: 10;
+    letter-spacing: 0.2rem;
+    padding: 0rem 1rem 0rem 1rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+    background-color: $bg-color;
+    text-align: center;
+    @include easeOut;
+    color: $dark-highlight-color;
+  }
+
+  .music-box {
+    padding: 2rem;
+    border: 3px dotted $dark-highlight-color;
+    text-align: center;
+    @include easeOut;
+
+    iframe {
+      padding: 1rem;
+    }
+    h3 {
+      color: $dark-highlight-color;
+      padding: 0.5rem;
+      border: 1px solid;
+      border-radius: 10px;
+      &:hover {
+        @include easeOut;
+        background: rgba(lighten($primary-color, 2), $overlay-opacity);
+        color: white;
+      }
+    }
+  }
+}

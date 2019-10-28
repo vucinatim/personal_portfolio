@@ -1,0 +1,92 @@
+// Code Projects Page
+.projects-wrapper {
+  background: black;
+  width: 100%;
+
+  h2 {
+    color: $dark-highlight-color;
+    text-align: center;
+  }
+
+  .project-container {
+    color: white;
+    position: relative;
+    margin: 0 auto;
+    padding: 3rem 5rem 0 5rem;
+    max-width: 1000px;
+
+    &:hover {
+      @include easeOut;
+      h3 {
+        color: $code-secondary-color;
+      }
+      .project-box {
+        border: 3px dotted $code-secondary-color;
+      }
+    }
+
+    .project-title {
+      margin: 0;
+      font-weight: 10;
+      letter-spacing: 0.2rem;
+      padding: 0rem 1rem 0rem 1rem;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      z-index: 1;
+      background-color: $bg-color;
+      text-align: center;
+      @include easeOut;
+      color: $dark-highlight-color;
+    }
+
+    .project-box {
+      padding: 2rem;
+      border: 3px dotted $dark-highlight-color;
+      cursor: pointer;
+      @include easeOut;
+
+      display: grid;
+      padding: 2rem;
+      grid-gap: 2rem;
+      grid-template-areas: "project-image description description";
+      grid-template-columns: repeat(3, 1fr);
+
+      .project-image {
+        grid-area: project-image;
+        max-width: 300px;
+        min-width: 20px;
+        width: 30vw;
+      }
+
+      .project-description {
+        grid-area: description;
+
+        p {
+          margin-bottom: 1rem;
+        }
+
+        .project-buttons {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+
+          .btn-dark {
+            all: none;
+            cursor: pointer;
+            margin: 0;
+            width: 48%;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 1rem;
+
+            i {
+              padding-right: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
