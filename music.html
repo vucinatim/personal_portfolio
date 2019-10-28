@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Music</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu-btn-outline">
+        <div class="menu-btn">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <div class="menu-header">
+          <a class="home-btn" href="./index.html">
+            <i class="fas fa-home fa-2x home-btn-image"></i>
+          </a>
+          <button class="contact-btn" id="toggleContact">
+            <i class="fas fa-envelope fa-2x contact-btn-image"></i>
+          </button>
+        </div>
+        <div class="menu-nav">
+          <div class="circle"></div>
+          <p class="btn-text">text</p>
+          <ul class="nav-links">
+            <li class="nav-item" id="graphics">
+              <a href="graphics.html" class="nav-link">
+                <img src="img/art-icon-rect.png" id="graphics" alt="" />
+                <div class="triangle-line" id="g"></div>
+              </a>
+            </li>
+            <li class="nav-item" id="music">
+              <a href="music.html" class="nav-link">
+                <img src="img/music-icon-rect.png" id="music" alt="" />
+                <div class="triangle-line" id="m"></div>
+              </a>
+            </li>
+            <li class="nav-item" id="code">
+              <a href="code.html" class="nav-link">
+                <img src="img/code-icon-rect.png" id="code" alt="" />
+                <div class="triangle-line" id="c"></div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div class="contact-me">
+          <article id="contact">
+            <h2 class="contact-title">Contact</h2>
+            <form
+              action="https://app.99inbound.com/api/e/rt6bF_PH"
+              method="POST"
+              target="_blank"
+            >
+              <div class="fields">
+                <div class="field half">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name" />
+                </div>
+                <div class="field half">
+                  <label for="email">Email</label>
+                  <input type="text" name="email" id="email" />
+                </div>
+                <div class="field">
+                  <label for="subject">Subject</label>
+                  <input type="text" name="subject" id="subject" />
+                </div>
+                <div class="field">
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message" rows="4"></textarea>
+                </div>
+              </div>
+              <ul class="actions">
+                <li>
+                  <input type="submit" value="Send Message" class="primary" />
+                </li>
+                <li><input type="reset" value="Reset" /></li>
+              </ul>
+              <!-- Stop Spam With honeypot -->
+              <div style="position: absolute; left: -5000px;">
+                <input
+                  type="checkbox"
+                  name="sugarfilled_turquoise_checked_suit"
+                  value="1"
+                  tabindex="-1"
+                  autocomplete="no"
+                />
+              </div>
+            </form>
+            <div class="icons">
+              <a href="https://www.youtube.com/channel/UCnzGWPZ7_nUMgkmhU3sn6QA">
+                <i class="fab fa-youtube fa-2x"></i>
+              </a>
+              <a href="https://soundcloud.com/tim-vook">
+                <i class="fab fa-soundcloud fa-2x"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/tim-vu%C4%8Dina-945153196/">
+                <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+              <a href="https://github.com/vucinatim?tab=repositories">
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </nav>
+    </header>
+
+    <main id="music" class="blurable">
+      <div class="page-title centered">
+        <img id="title-img" src="img/music-production-title.png" alt="" />
+      </div>
+      <div class="music-wrapper">
+        <div class="music-container yt-music">
+          <h3 class="music-container-title">YOUTUBE</h3>
+            <div class="music-box">
+              <iframe width="100%" height="300" src="https://www.youtube.com/embed/8kp_W8Wrc5A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="100%" height="300" src="https://www.youtube.com/embed/jDAd9b_MJ18" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="100%" height="300" src="https://www.youtube.com/embed/23p5CuYcB0w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <a href="https://www.youtube.com/channel/UCnzGWPZ7_nUMgkmhU3sn6QA"><h3>For more visit my youtube</h3></a>
+            </div>
+        </div>
+
+        <div class="music-container sc-music">
+            <h3 class="music-container-title">SOUNDCLOUD</h3>
+            <div class="music-box">
+              <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/513702528&color=%23aa57aa&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+              <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/683446268%3Fsecret_token%3Ds-ZDxq5&color=%23aa57aa&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+              <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/354258137&color=%23aa57aa&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+              <a href="https://soundcloud.com/tim-vook"><h3>For more visit my soundcloud</h3></a>
+            </div>
+        </div>
+    </main>
+
+    <footer id="main-footer">
+      Copyright &copy; 2019
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/fd0f852bd6.js"></script>
+    <script
+      type="text/javascript"
+      src="js/lightbox-plus-jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="js/music.js"></script>
+  </body>
+</html>
