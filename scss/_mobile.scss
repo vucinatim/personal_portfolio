@@ -113,6 +113,21 @@
 
 // Smartphones (< 500px)
 @include mediaSm {
+  h1,
+  h2,
+  h3 {
+    font-weight: 6;
+
+    &.lg-heading {
+      font-size: 2.5rem;
+      letter-spacing: 0.5rem;
+    }
+
+    &.sm-heading {
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+    }
+  }
   main#home h1 {
     margin-top: 10vh;
   }
