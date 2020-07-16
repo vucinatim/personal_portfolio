@@ -312,7 +312,7 @@ main {
     color: white;
     position: relative;
     margin: 0 auto;
-    padding: 3rem 5rem 0 5rem;
+    padding: 3rem 5rem 3rem 5rem;
     max-width: 1000px; }
     .projects-wrapper .project-container:hover {
       transition: all 0.4s ease-out; }
@@ -353,6 +353,8 @@ main {
         grid-area: description; }
         .projects-wrapper .project-container .project-box .project-description p {
           margin-bottom: 1rem; }
+        .projects-wrapper .project-container .project-box .project-description .small-info {
+          color: gray; }
         .projects-wrapper .project-container .project-box .project-description .project-buttons {
           width: 100%;
           display: flex;
